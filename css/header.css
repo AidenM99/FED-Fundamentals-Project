@@ -1,0 +1,132 @@
+@import url(colors.css);
+
+nav {
+  background-color: var(--light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  border-right: 2px solid var(--grey-500);
+  padding-right: 1rem;
+}
+
+.fa-angle-down:before {
+  font-size: 0.8rem;
+  padding: 0 0.25rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:not(.nav-link.dropdown) {
+  padding: 0 1.5rem;
+}
+
+.dropdown-container {
+  padding: 0 1.5rem 0 2rem
+}
+
+.nav-link.dropdown {
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.dropdown-icon {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--light);
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  min-width: 140px;
+  border-radius: 0 0 8px 8px;
+  padding: 1rem 0;
+}
+
+.dropdown-container:hover .dropdown-content,
+.dropdown-content:hover {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-link {
+  text-decoration: none;
+  color: var(--grey-900);
+  font-weight: var(--text-light);
+  padding: 0.75rem 1.25rem;
+}
+
+.dropdown-link:hover {
+  background-color: var(--grey-200);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  background-color: var(--grey-300);
+  padding: 0.75rem;
+  border-radius: 10px;
+  margin-left: 1.5rem;
+}
+
+.username,
+.nav-link,
+.avatar {
+  text-decoration: none;
+  color: var(--grey-900);
+  font-weight: var(--text-bold);
+}
+
+.additional-links-container {
+  background-color: var(--navy-800);
+}
+
+.additional-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.additional-link {
+  text-decoration: none;
+  color: var(--light);
+  font-weight: var(--text-bold);
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+  nav {
+    padding: 0.5rem 3rem;
+  }
+
+  .additional-links-container {
+    padding: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  nav {
+    padding: 0.5rem 1rem;
+  }
+
+  .additional-links-container {
+    padding: 1rem;
+  }
+}
