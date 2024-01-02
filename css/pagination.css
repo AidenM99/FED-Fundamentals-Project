@@ -1,0 +1,28 @@
+@import url(variables.css);
+
+.pagination {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #171e3126;
+}
+
+.pagination-controls {
+  background-color: var(--light);
+}
+
+.current-page {
+  margin: 0 0.5rem;
+}
+
+.pagination-controls,
+.current-page {
+  border: 1px solid var(--grey-500);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+
+.page-numbers {
+  padding: 0 1rem;
+}
