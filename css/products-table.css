@@ -1,0 +1,66 @@
+@import url(variables.css);
+
+.table-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.table-heading,
+.table-data {
+  text-align: left;
+}
+
+.table-heading.table-heading-price,
+.table-data.table-data-price {
+  text-align: end;
+}
+
+#filter-button {
+  border: 1px solid var(--grey-500);
+  border-radius: 8px;
+  padding: 0.5rem 1.25rem;
+  font-weight: var(--font-weight-bold);
+  background-color: #fff;
+}
+
+#products-table {
+  border-radius: 1rem;
+}
+
+.table-product-item:nth-child(even) {
+  background-color: var(--light);
+}
+
+.table-product-item:nth-child(odd) {
+  background-color: var(--grey-100);
+}
+
+.table-image {
+  border: 1px solid #707070;
+  vertical-align: middle;
+}
+
+.table-heading {
+  padding-bottom: 0.75rem;
+}
+
+th {
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+}
+
+.table-data {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.table-data:first-child,
+.table-heading:first-child {
+  padding-left: 1.5rem;
+}
+
+.table-data:last-child,
+.table-heading:last-child {
+  padding-right: 1.5rem;
+}

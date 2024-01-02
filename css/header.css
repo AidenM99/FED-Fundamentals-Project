@@ -1,11 +1,4 @@
-@import url(colors.css);
-
-nav {
-  background-color: var(--light);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+@import url(variables.css);
 
 .nav-left {
   display: flex;
@@ -23,17 +16,16 @@ nav {
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
   align-items: center;
 }
 
-.nav-link:not(.nav-link.dropdown) {
+.nav-links > li:not(.dropdown-container) {
   padding: 0 1.5rem;
 }
 
 .dropdown-container {
-  padding: 0 1.5rem 0 2rem
+  padding: 0 1.5rem 0 2rem;
 }
 
 .nav-link.dropdown {
@@ -63,14 +55,15 @@ nav {
 }
 
 .dropdown-link {
-  text-decoration: none;
   color: var(--grey-900);
-  font-weight: var(--text-light);
+  font-weight: var(--text-weight-normal);
+  display: block;
   padding: 0.75rem 1.25rem;
 }
 
-.dropdown-link:hover {
+.dropdown-content > ul > li:hover {
   background-color: var(--grey-200);
+  cursor: pointer;
 }
 
 .user-info {
@@ -88,9 +81,8 @@ nav {
 .username,
 .nav-link,
 .avatar {
-  text-decoration: none;
   color: var(--grey-900);
-  font-weight: var(--text-bold);
+  font-weight: var(--text-weight-bold);
 }
 
 .additional-links-container {
@@ -98,34 +90,24 @@ nav {
 }
 
 .additional-links {
-  list-style: none;
   display: flex;
   align-items: center;
   margin: 0;
 }
 
 .additional-link {
-  text-decoration: none;
   color: var(--light);
-  font-weight: var(--text-bold);
+  font-weight: var(--text-weight-bold);
   padding: 0 1rem;
 }
 
 @media screen and (min-width: 1440px) {
-  nav {
-    padding: 0.5rem 3rem;
-  }
-
   .additional-links-container {
     padding: 1rem 3rem;
   }
 }
 
 @media screen and (max-width: 1439px) {
-  nav {
-    padding: 0.5rem 1rem;
-  }
-
   .additional-links-container {
     padding: 1rem;
   }

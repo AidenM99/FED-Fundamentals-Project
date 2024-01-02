@@ -3,8 +3,10 @@
     --grey-500: #898989;
     --grey-300: #D5D5D5;
     --grey-200: #EAEAEA;
+    --grey-100: #F2F2F2;
     --navy-800: #040138;
     --light: #ffffff;
-    --text-bold: 600;
-    --text-light: 400;
+    --text-weight-bold: 600;
+    --text-weight-normal: 400;
+    --text-weight-medium: 500;
   }
