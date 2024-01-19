@@ -30,6 +30,9 @@
           </div>
 
           <ul class="nav-links">
+            <li class="mobile-menu">
+              <i class="fa-solid fa-bars"></i>
+            </li>
             <li class="dropdown-container">
               <a href="#" class="nav-link dropdown">Inventory</a>
               <i class="fa-solid fa-angle-down dropdown-icon"></i>
@@ -53,8 +56,8 @@
                 </ul>
               </div>
             </li>
-            <li>
-              <a href="#" class="nav-link active">Products</a>
+            <li class="active">
+              <a href="#" class="nav-link">Products</a>
             </li>
             <li>
               <a href="#" class="nav-link">Reviews</a>
@@ -78,7 +81,7 @@
 
       <div class="additional-links-container">
         <ul class="additional-links">
-          <li>
+          <li class="active">
             <a href="#" class="additional-link">All</a>
           </li>
           <li>
@@ -97,17 +100,19 @@
       <div class="container">
         <section id="controls">
           <header>
-            <h1>Products</h1>
+            <h1 class="heading">Products</h1>
           </header>
           <div class="products-options-buttons">
-            <button id="import-button">
-              <i class="fa-solid fa-file-export"></i>
-              Import
-            </button>
-            <button id="export-button">
-              <i class="fa-solid fa-file-export"></i>
-              Export
-            </button>
+            <div>
+              <button id="import-button">
+                <i class="fa-solid fa-file-export"></i>
+                Import
+              </button>
+              <button id="export-button">
+                <i class="fa-solid fa-file-export"></i>
+                Export
+              </button>
+            </div>
             <button id="add-product-button">
               <i class="fa-solid fa-plus"></i>
               Add product
@@ -122,50 +127,52 @@
             </button>
             <span class="products-count">1-30 of 30,531</span>
           </div>
-          <table cellspacing="0">
-            <thead>
-              <tr>
-                <th class="table-heading table-heading-image">Image</th>
-                <th class="table-heading">Title</th>
-                <th class="table-heading">Product ID</th>
-                <th class="table-heading">Category</th>
-                <th class="table-heading">Rating</th>
-                <th class="table-heading table-heading-price">Price</th>
+          <div class="table-container">
+            <table cellspacing="0">
+              <thead>
+                <tr>
+                  <th class="table-heading table-heading-image">Image</th>
+                  <th class="table-heading">Title</th>
+                  <th class="table-heading">Product ID</th>
+                  <th class="table-heading">Category</th>
+                  <th class="table-heading">Rating</th>
+                  <th class="table-heading table-heading-price">Price</th>
+                </tr>
+              </thead>
+              <tr class="table-product-item">
+                <td class="table-data table-data-image">
+                  <img
+                    class="table-image"
+                    src="/assets/images/square.svg"
+                    alt="Logo"
+                  />
+                </td>
+                <td class="table-data">
+                  Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+                </td>
+                <td class="table-data">1</td>
+                <td class="table-data">Men's Clothing</td>
+                <td class="table-data">3.9 (120)</td>
+                <td class="table-data table-data-price">£109.95</td>
               </tr>
-            </thead>
-            <tr class="table-product-item">
-              <td class="table-data table-data-image">
-                <img
-                  class="table-image"
-                  src="/assets/images/square.svg"
-                  alt="Logo"
-                />
-              </td>
-              <td class="table-data">
-                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
-              </td>
-              <td class="table-data">1</td>
-              <td class="table-data">Men's Clothing</td>
-              <td class="table-data">3.9 (120)</td>
-              <td class="table-data table-data-price">£109.95</td>
-            </tr>
-            <tr class="table-product-item">
-              <td class="table-data table-data-image">
-                <img
-                  class="table-image"
-                  src="/assets/images/square.svg"
-                  alt="Logo"
-                />
-              </td>
-              <td class="table-data">
-                Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
-              </td>
-              <td class="table-data">1</td>
-              <td class="table-data">Men's Clothing</td>
-              <td class="table-data">3.9 (120)</td>
-              <td class="table-data table-data-price">£109.95</td>
-            </tr>
-          </table>
+              <tr class="table-product-item">
+                <td class="table-data table-data-image">
+                  <img
+                    class="table-image"
+                    src="/assets/images/square.svg"
+                    alt="Logo"
+                  />
+                </td>
+                <td class="table-data">
+                  Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
+                </td>
+                <td class="table-data">1</td>
+                <td class="table-data">Men's Clothing</td>
+                <td class="table-data">3.9 (120)</td>
+                <td class="table-data table-data-price">£109.95</td>
+              </tr>
+            </table>
+          </div>
           <div class="pagination">
             <button class="pagination-controls prev">
               <i class="fa-solid fa-chevron-left"></i>

@@ -1,9 +1,16 @@
 @import url(variables.css);
 
 #controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  padding: 0.5rem 0 1rem;
 }
 
 #products-table {
@@ -30,6 +37,28 @@
   padding: 0.75rem 1.25rem;
 }
 
+.products-options-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .products-options-buttons > button > i {
   margin-right: 0.25rem;
+}
+
+@media screen and (max-width: 767px) {
+  #controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+  }
+
+  #import-button,
+  #export-button {
+    background: none;
+    padding: 1rem 1rem 1rem 0rem;
+  }
 }

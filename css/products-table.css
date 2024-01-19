@@ -1,8 +1,18 @@
 @import url(variables.css);
 
+.table-container {
+  overflow-x: auto;
+}
+
 .table-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 1.5rem;
 }
@@ -42,25 +52,17 @@
   vertical-align: middle;
 }
 
-.table-heading {
-  padding-bottom: 0.75rem;
-}
-
-th {
-  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
-}
-
+.table-heading,
 .table-data {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0.5rem 0.75rem;
 }
 
 .table-data:first-child,
 .table-heading:first-child {
-  padding-left: 1.5rem;
+  padding-left: 1rem;
 }
 
 .table-data:last-child,
 .table-heading:last-child {
-  padding-right: 1.5rem;
+  padding-right: 1rem;
 }
