@@ -26,21 +26,30 @@
 .current-page {
   border: 1px solid var(--grey-500);
   border-radius: 8px;
-  padding: 0.75rem 1rem;
 }
 
 @media screen and (min-width: 768px) {
   .page-numbers {
     padding: 0 1rem;
   }
+
+  .pagination-controls,
+  .current-page {
+  padding: 0.75rem 1rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .pagination {
-    padding: 1rem 0.5rem;
+    padding: 1rem 1rem;
   }
 
   .page-numbers {
     padding: 0 0.5rem;
+  }
+
+  .current-page,
+  .pagination-controls {
+    padding: 0.5rem 0.75rem;
   }
 }

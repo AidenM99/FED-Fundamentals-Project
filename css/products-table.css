@@ -72,16 +72,16 @@
 @media screen and (max-width: 767px) {
   .table-data:first-child,
   .table-heading:first-child {
-    padding-left: 0.5rem;
+    padding-left: 1rem;
   }
   
   .table-data:last-child,
   .table-heading:last-child {
-    padding-right: 0.5rem;
+    padding-right: 1rem;
   }
 
   .table-info {
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem 1rem;
   }
 }
 
