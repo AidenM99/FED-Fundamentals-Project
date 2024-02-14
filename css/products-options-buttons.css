@@ -71,4 +71,12 @@
     justify-content: space-between;
     width: 100%;
   }
+
+  .products-options-buttons > button > i {
+    display: none;
+  }
+
+  #add-product-button {
+    padding: 0.75rem;
+  }
 }

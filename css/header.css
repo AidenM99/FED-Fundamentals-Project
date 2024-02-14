@@ -85,7 +85,6 @@
   background-color: var(--grey-300);
   padding: 0.75rem;
   border-radius: 10px;
-  margin-left: 1.5rem;
 }
 
 .username,
@@ -171,8 +170,7 @@
     padding: 0 1.5rem;
   }
 
-  .nav-links > li:not(.mobile-menu):not(.dropdown-container),
-  .username {
+  .nav-links > li:not(.mobile-menu):not(.dropdown-container) {
     display: none;
   }
 
@@ -199,6 +197,10 @@
     transform: translateX(-50%);
     bottom: -26px;
   }
+
+  .avatar {
+    margin-left: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -210,5 +212,13 @@
 
   .heading {
     margin: 0.5rem 0 1rem;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .mobile-menu {
+    padding: 0 1rem;
   }
 }

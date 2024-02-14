@@ -25,7 +25,6 @@ ul {
 }
 
 main {
-  padding: 0.5rem 3rem;
   background-color: var(--grey-100);
 }
 
@@ -65,10 +64,10 @@ table {
 
 @media screen and (max-width: 1439px) {
   nav {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
   }
 
   main {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
   }
 }
